@@ -16,7 +16,7 @@
 		"firstname": "Heinrich",
 		"lastname": "Zille"
 	}
-	// alert(person['firstname'] + " " + person.lastname);
+	//alert(person['firstname'] + " " + person.lastname);
 
 	var item,key;
 	// schleife wie foreach
@@ -28,11 +28,8 @@
 //	    document.writeln(myArray[key] + "<br>");
     }
 
-	var i;
-	var length = myArray.length;
-	for(i = 0; i < length; i++){
-		document.writeln(myArray[i] + "<br>");
-	}
-
-
+    // klassische for-schleife
+    for(var i = 0; i < myArray.length; i++) {
+	    document.writeln(myArray[i] + "<br>");
+    }
 </script>
