@@ -1,3 +1,28 @@
+function rechner(a, b, operator) {
+	// wandle string zu integer um
+	a = parseInt(a)
+	b = parseInt(b)
+	// switch für berechnung        
+	var ergebnis = "noch nix"
+	switch(operator) {
+		case "+":
+			ergebnis = a + b
+			break;
+		case "-":
+			ergebnis = a - b
+			break;
+		case "*":
+			ergebnis = a * b
+			break;
+		case "/":
+			ergebnis = a / b
+			break;
+		default:
+			ergebnis = "falscher Operator"
+			break;
+	}
+	return ergebnis
+}
 
 function speakText(txt, locale) {
 	var utterance = new SpeechSynthesisUtterance(),

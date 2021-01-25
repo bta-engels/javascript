@@ -1,5 +1,5 @@
 <?php require '../inc/header.shtml'; ?>
-
+<h1>Mein Rechner</h1>
 <form class="mt-5">
     <div class="form-group">
         <label for="a">Zahl A</label>
@@ -23,5 +23,21 @@
         <input type="button" id="submit" value="rechne" class="btn btn-primary">
     </div>
 </form>
+<script>
 
+    var btn = document.getElementById('submit');
+    console.info(btn)
+
+    btn.onclick = function(e) {
+        console.info(e)
+        var a = document.getElementById('a').value
+        var b = document.getElementById('b').value
+        var operator = document.getElementById('operator').value
+        var h1 = document.querySelector('h1')
+
+        h1.innerHTML = rechner(a, b, operator)
+        //alert()
+
+    }
+</script>
 <?php require '../inc/footer.shtml'; ?>
