@@ -1,23 +1,31 @@
 <script>
     // string variable
 	var name="Bernd Engels<br>";
-	document.writeln(name);
+//	document.writeln(name);
     // array variable
 	var myArray = ["Hans", "Lisa", "Paul"];
-	
+
 	// assoziatives array
+/*
 	var person = [];
 	person["firstname"] = "Heinrich";
-	person["lastname"] = "Zille"; 
+	person["lastname"] = "Zille";
 	console.info(person);
+*/
+	var person = {
+		"firstname": "Heinrich",
+		"lastname": "Zille"
+	}
+	alert(person['firstname'] + " " + person.lastname);
 
 	var item,key;
 	// schleife wie foreach
 	for(item of myArray){
-		document.writeln(item + "<br>");
+//		document.writeln(item + "<br>");
     }
 	// oder
     for(key in myArray){
-	    document.writeln(myArray[key] + "<br>");
+//	    document.writeln(myArray[key] + "<br>");
     }
+
 </script>
