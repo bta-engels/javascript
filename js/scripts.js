@@ -24,21 +24,17 @@ function rechner(a, b, operator) {
 	return ergebnis
 }
 
-function speakText(txt, locale) {
+function speakText(txt, locale = "de-DE") {
 	var utterance = new SpeechSynthesisUtterance(),
 		voices = speechSynthesis.getVoices()
 		;
 
-	if(locale !== undefined) {
-		utterance.lang = locale;
-		for(var i = 0; i < voices.length; i++) {
-			if(voices[i].lang === locale) {
-				utterance.voice = voices[i];
-				break;
-			}
+	utterance.lang = locale;
+	for(var i = 0; i < voices.length; i++) {
+		if(voices[i].lang === locale) {
+			utterance.voice = voices[i];
+			break;
 		}
-	} else {
-		utterance.lang = 'de-DE';
 	}
 
 	utterance.text = txt;
