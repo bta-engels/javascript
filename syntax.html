@@ -5,13 +5,34 @@
     // array variable
 	var myArray = ["Hans", "Lisa", "Paul"];
 
+	// assoziiertes array
+	var person = [];
+	person["firstname"] = "Heinrich";
+	person["lastname"] = "Zille";
+	// Entsprechung zu print_r in php: nur für Programmierer
+	console.info(person);
+
+	// alternative Schreibweise
+	var persons = {
+		"firstname": "Henry",
+		"lastname": "Chinaski"
+	}
+
+	// Öffnet Variable als alert-Fenster
+	alert(persons["firstname"] + " " + persons.lastname);
+
+
 	var item,key;
 	// schleife wie foreach
 	for(item of myArray){
 		document.writeln(item + "<br>");
-    }
+	}	
+
+
 	// oder
     for(key in myArray){
 	    document.writeln(myArray[key] + "<br>");
-    }
+	}
+	
+
 </script>
