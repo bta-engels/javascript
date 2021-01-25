@@ -1,3 +1,24 @@
+function rechner(a, b, operator) {
+	var ergebnis;
+	a = parseInt(a);
+	b = parseInt(b);
+	switch (operator) {
+		case '+':
+			ergebnis = a + b;
+			break;
+		case '-':
+			ergebnis = a - b;
+			break;
+		case '*':
+			ergebnis = a * b;
+			break;
+		case '/':
+			ergebnis = a / b;
+			break;
+				}
+	return ergebnis
+}
+
 
 function speakText(txt, locale) {
 	var utterance = new SpeechSynthesisUtterance(),
