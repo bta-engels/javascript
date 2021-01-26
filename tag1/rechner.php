@@ -1,4 +1,3 @@
-<?php require '../inc/header.shtml'; ?>
 <h1>Mein Rechner</h1>
 <form class="mt-5">
     <div class="form-group">
@@ -36,8 +35,6 @@
         var h1 = document.querySelector('h1')
 
         h1.innerHTML = rechner(a, b, operator)
-        //alert()
-
     }
 </script>
 <?php require '../inc/footer.shtml'; ?>
