@@ -2,7 +2,7 @@ function rechner(a, b, operator) {
 	// wandle string zu integer um
 	a = parseInt(a)
 	b = parseInt(b)
-	// switch für berechnung        
+	// switch für berechnung
 	var ergebnis = "noch nix"
 	switch(operator) {
 		case "+":
