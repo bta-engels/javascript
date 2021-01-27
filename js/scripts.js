@@ -2,7 +2,7 @@ function rechner(a, b, operator) {
 	// wandle string zu integer um
 	a = parseInt(a)
 	b = parseInt(b)
-	// switch für berechnung        
+	// switch für berechnung
 	var ergebnis = "noch nix"
 	switch(operator) {
 		case "+":
@@ -28,6 +28,8 @@ function speakText(txt, locale = "de-DE") {
 	var utterance = new SpeechSynthesisUtterance(),
 		voices = speechSynthesis.getVoices()
 		;
+
+	console.info(voices);
 
 	utterance.lang = locale;
 	for(var i = 0; i < voices.length; i++) {
