@@ -21,8 +21,12 @@
             // firstname, lastname des Autoren darstellen
             // li-Element der ul hinzufügen
             for (item of authors) {
-                document.createElement('<li>')
-
+                // Erstelle ein HTML-Element (Parameter muss existierendes html-Tag sein)
+                var li = document.createElement('li');
+                // Fülle li-Element mit Daten aus Array
+                li.innerText = item.firstname + ' ' + item.lastname;
+                // Füge der ul das li-Element hinzu
+                ul.appendChild(li);
             }
 
         }
