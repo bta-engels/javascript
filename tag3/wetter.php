@@ -1,8 +1,8 @@
 <?php require '../inc/header.shtml'; ?>
 <script src="../js/config.js"></script>
 
-<h1 id="temperatur"></h1>
-<h3 id="beschreibung"></h3>
+<h1 id="temperatur">Temperatur</h1>
+<h3 id="beschreibung">Wetter Beschreibung</h3>
 
 <script>
 var city = 'Berlin',
@@ -12,4 +12,12 @@ $.get(url, function (resp) {
     console.info(resp);
 });
 </script>
+<style>
+    #beschreibung {
+        padding-left: 60px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+</style>
 <?php require '../inc/footer.shtml'; ?>
