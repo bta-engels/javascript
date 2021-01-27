@@ -5,12 +5,13 @@
 <h3 id="beschreibung">Wetter Beschreibung</h3>
 
 <script>
-var city = 'Berlin',
-    url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',de&lang=de&units=metric&APPID=' + OW_API_KEY;
+    var city = 'Berlin',
+        // Zusammensetzung der URL der Dokumentation entnehmen
+        url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',de&lang=de&units=metric&APPID=' + OW_API_KEY;
 
-$.get(url, function (resp) {
-    console.info(resp);
-});
+    $.get(url, function(resp) {
+        console.info(resp);
+    });
 </script>
 <style>
     #beschreibung {
