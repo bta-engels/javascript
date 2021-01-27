@@ -29,6 +29,8 @@ function speakText(txt, locale = "de-DE") {
 		voices = speechSynthesis.getVoices()
 		;
 
+	console.info(voices);
+
 	utterance.lang = locale;
 	for(var i = 0; i < voices.length; i++) {
 		if(voices[i].lang === locale) {
