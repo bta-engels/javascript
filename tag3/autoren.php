@@ -7,7 +7,7 @@
     var h1 = document.querySelector('h1'),
         ul = document.querySelector('ul'),
         li,
-        url = 'http://bta-movies.loc/api/authors';
+        url = 'http://bta-movies.loc/api/author/0';
     // ajax request per GET methode
     $.get(url, function(response) {
 	    console.info(response);
@@ -22,12 +22,13 @@
             // li - elem bauen
             // firstname, lastname vom autor darstellen
             // li - elem dem ul - elem hinzufügen
-            for(item of authors) {
-            	li = document.createElement('li');
-            	li.innerText = item.firstname + " " + item.lastname;
-            	ul.appendChild(li);
+            if(authors.length > 0) {
+	            for(item of authors) {
+		            li = document.createElement('li');
+		            li.innerText = item.firstname + " " + item.lastname;
+		            ul.appendChild(li);
+	            }
             }
-
         }
     });
 </script>

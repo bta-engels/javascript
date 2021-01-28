@@ -26,10 +26,8 @@ function rechner(a, b, operator) {
 
 function speakText(txt, locale = "de-DE") {
 	var utterance = new SpeechSynthesisUtterance(),
-		voices = speechSynthesis.getVoices()
-		;
-
-	console.info(voices);
+		voices = speechSynthesis.getVoices();
+	//console.info(voices);
 
 	utterance.lang = locale;
 	for(var i = 0; i < voices.length; i++) {
