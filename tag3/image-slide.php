@@ -1,4 +1,5 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
+
 <h1></h1>
 <div class="row">
     <img id="image" src="../img/fahrrad.jpg" class="align-self-center m-auto" height="500" alt="Slider" title="Slider">
@@ -25,5 +26,6 @@
     }
     var interval = setInterval(slide, delay);
 </script>
-<?php require '../inc/footer.shtml'; ?>
+
+<?php require '../inc/footer.html'; ?>
 

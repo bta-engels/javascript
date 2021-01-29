@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <div id="txt">Bitte warten</div>
 
@@ -12,4 +12,5 @@
     	//speakText(response);
     });
 </script>
-<?php require '../inc/footer.shtml'; ?>
+
+<?php require '../inc/footer.html'; ?>

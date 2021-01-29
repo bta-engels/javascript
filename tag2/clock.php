@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <h1 id="demo"></h1>
 <p id="counter"></p>
@@ -10,4 +10,5 @@
 		document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 	}
 </script>
-<?php require '../inc/footer.shtml'; ?>
+
+<?php require '../inc/footer.html'; ?>

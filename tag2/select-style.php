@@ -1,6 +1,6 @@
-<?php require '../inc/header.shtml'; ?>
-<h1>Test</h1>
+<?php require '../inc/header.html'; ?>
 
+<h1>Test</h1>
 <div></div>
 
 <script>
@@ -37,4 +37,4 @@
     // oder
     select.onchange = changeStyle
 </script>
-<?php require '../inc/footer.shtml'; ?>
+<?php require '../inc/footer.html'; ?>

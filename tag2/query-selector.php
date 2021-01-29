@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Kurs</title>
-    <!-- für bootstrap unterstützung -->
-    <link rel="stylesheet" href="/javascript/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/javascript/css/styles.css">
-    <script src="/javascript/js/jquery-3.5.1.min.js"></script>
-    <script src="/javascript/js/bootstrap/bootstrap.min.js"></script>
-    <script src="/javascript/js/scripts.js"></script>
-    <!-- bootstrap ende -->
-</head>
-<body>
-<div class="container m-3">
+<?php require '../inc/header.html'; ?>
+
     <h1>Query Selector Übungen</h1>
     <hr>
     <h3>1. Reihe</h3>
@@ -98,5 +84,5 @@
 	    h3.style.backgroundColor = "#ffffff"
     }
 </script>
-</body>
-</html>
+
+<?php require '../inc/footer.html'; ?>

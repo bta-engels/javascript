@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <h1 class="d-block mx-auto">Image Slider</h1>
 <div id="row">
@@ -55,4 +55,4 @@ var interval = setInterval(function() {
         align-content: center;
     }
 </style>
-<?php require '../inc/footer.shtml'; ?>
+<?php require '../inc/footer.html'; ?>

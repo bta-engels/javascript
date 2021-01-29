@@ -1,4 +1,5 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
+
 <script src="../js/config.js"></script>
 
 <h1 id="temperatur">Mein Wetter</h1>
@@ -32,4 +33,5 @@ $.get(url, function (resp) {
         background-size: auto;
     }
 </style>
-<?php require '../inc/footer.shtml'; ?>
+
+<?php require '../inc/footer.html'; ?>

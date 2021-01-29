@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <h1>Open File and Read</h1>
 <button class="btn-sm btn-primary" onClick="readFromFile();">Read my File Content</button> &nbsp;
@@ -83,4 +83,4 @@ function speakText(txt) {
         color: red;
     }
 </style>
-<?php require '../inc/footer.shtml'; ?>
+<?php require '../inc/footer.html'; ?>

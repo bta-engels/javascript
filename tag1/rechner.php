@@ -1,3 +1,5 @@
+<?php require '../inc/header.html'; ?>
+
 <h1>Mein Rechner</h1>
 <form class="mt-5">
     <div class="form-group">
@@ -37,4 +39,5 @@
         h1.innerHTML = rechner(a, b, operator)
     }
 </script>
-<?php require '../inc/footer.shtml'; ?>
+
+<?php require '../inc/footer.html'; ?>

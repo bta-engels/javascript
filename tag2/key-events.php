@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <div id="txt">Mein Text</div>
 <hr>
@@ -13,4 +13,4 @@
         console.log(wert.length)
     }
 </script>
-<?php require '../inc/footer.shtml'; ?>
+<?php require '../inc/footer.html'; ?>

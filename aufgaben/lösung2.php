@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <div></div>
 
@@ -38,4 +38,4 @@ var div = document.querySelector('div'),
         text-transform: uppercase;
     }
 </style>
-<?php require '../inc/footer.shtml'; ?>
+<?php require '../inc/footer.html'; ?>

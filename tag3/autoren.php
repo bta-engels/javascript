@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <h1>Bitte warten</h1>
 <ul></ul>
@@ -32,4 +32,5 @@
         }
     });
 </script>
-<?php require '../inc/footer.shtml'; ?>
+
+<?php require '../inc/footer.html'; ?>

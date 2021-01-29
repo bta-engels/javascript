@@ -1,4 +1,4 @@
-<?php require '../inc/header.shtml'; ?>
+<?php require '../inc/header.html'; ?>
 
 <input id="btnLoadAuthors" type="button" value="Lade Autoren" />
 <hr>
@@ -101,4 +101,4 @@
         font-size: 0.6rem;
     }
 </style>
-<?php require '../inc/footer.shtml'; ?>
+<?php require '../inc/footer.html'; ?>
