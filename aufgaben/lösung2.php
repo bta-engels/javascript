@@ -20,7 +20,8 @@ var div = document.querySelector('div'),
 	    th = document.createElement('th');
 	    td = document.createElement('td');
 
-	    th.innerText = key.toUpperCase();
+//	    th.innerText = key.toUpperCase();
+	    th.innerText = key;
         td.innerText = buch[key];
 
     	tr.appendChild(th);
@@ -28,8 +29,13 @@ var div = document.querySelector('div'),
 	    table.appendChild(tr);
     }
 
-    table.className = "table table-striped";
     div.appendChild(table);
+    
+    table.className = "table table-striped";
 </script>
-
+<style>
+    th {
+        text-transform: uppercase;
+    }
+</style>
 <?php require '../inc/footer.shtml'; ?>
