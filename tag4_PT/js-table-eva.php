@@ -31,7 +31,7 @@
         var row = document.createElement('tr');
         var k = document.createElement('td');
         var v = document.createElement('td');
-        k.innerText = key;
+        k.innerText = key.toUpperCase();
         v.innerText = buch[key];
         table.appendChild(row)
         row.appendChild(k);

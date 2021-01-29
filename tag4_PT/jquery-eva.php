@@ -73,15 +73,23 @@
     </div>
     <script>
         var h1 = document.querySelector('h1')
+        // jquery-Syntax; var keyword optional, aber Konvention
+        // var $h1 = $('h1');
+        // alternativ: $('body').find('h1');
         var h3 = document.querySelector('body .container h3')
         var block3oben = document.querySelector('body .container div.row div.col:last-child p')
+        // // jquery-Syntax:
+        // $block3oben = $('body .container div.row div.col:last-child p')
         var listheading = document.querySelector('body .container div.row:last-child .col:last-child h5')
         var reiheUnten = document.querySelector('div.row:last-child')
         var ul = reiheUnten.querySelector(".col:last-child ul")
+        // // jquery-Syntax:
+        // $reiheUnten.find('.col:last-child ul')
 
 
         // Ändere die Farbe des dritten Blocks auf Grün mit jquery-Syntax
         $(block3oben).css("color", "#006600");
+        // $block3oben.css({color: '#006600'});
 
 
         // Ersetze Listenüberschrift mit li-Element onclick und färbe sie rot

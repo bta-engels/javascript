@@ -84,17 +84,17 @@
         reiheUnten.querySelector('div.col:last-child ul li:last-child').style.color = "pink";
 
         // Setze das jeweils angeklickte Listenelement als rote Listenüberschrift
-        // ul.onclick = function(e) {
-        //     listheading.innerText = e.target.innerText;
-        //     listheading.style.color = "red";
-        // }
+        ul.onclick = function(e) {
+            listheading.innerText = e.target.innerText;
+            listheading.style.color = "red";
+        }
 
 
         // alternativ mit jquery-Syntax
-        $("li").click(function() {
-            $(listheading).text($(this).text());
-            $(listheading).css("color", "red");
-        });
+        // $("li").click(function() {
+        //     $(listheading).text($(this).text());
+        //     $(listheading).css("color", "red");
+        // });
 
 
         block3oben.style.color = "#006600";
