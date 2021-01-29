@@ -87,7 +87,7 @@
 		// e.target => li element
 		var liText = $(e.target).text();
 		// this => ul element, prev => gib das vorausgehenende element
-		$(this).prev('h5').text(liText);
+		$(this).prev('h5').text(liText).css('color','red');
 	});
 
 	$('li:last-child').css({color: "red"});
