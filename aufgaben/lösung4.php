@@ -70,27 +70,38 @@
     </div>
 </div>
 <script>
-	var $h1 = $('h1'),
+    // js syntax
+    // var h1 = document.querySelector('h1')
+    // jQuery: kurze schreibweise
+	var $h1 = $('h1');
 	    $h3 = $('body .container h3'),
 	    $block3oben = $('body .container div.row div.col:last-child p'),
 	    $reiheUnten = $('div.row:last-child'),
 	    $ul = $reiheUnten.find(".col:last-child ul");
-
+    // klassisch js:
+    // block3oben.style.color = "#006600"
 	$block3oben.css({color: "#006600"});
-
 
 	// click event auf liste
 	$ul.click(function (e) {
-		$(this).prev('h5').text($(e.target).text());
+		// e.target => li element
+		var liText = $(e.target).text();
+		// this => ul element, prev => gib das vorausgehenende element
+		$(this).prev('h5').text(liText).css('color','red');
 	});
 
 	$('li:last-child').css({color: "red"});
 
     // function declaration via ES6 (ECMA Script Version 6, Javascript 2015)
     // @see: https://www.w3schools.com/js/js_es6.asp
-	var over = (e) => {
+	let over = (e) => {
         $(e.target).css({color: "red", backgroundColor: "#ff0"});
 	}
+    /* klassische js schreibweise
+    function over(e) {
+        ... js code
+    }
+    */
 	var out = (e) => {
 		$(e.target).css({color: "black", backgroundColor: "#fff"});
 	}
