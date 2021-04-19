@@ -83,4 +83,5 @@ function speakText(txt) {
         color: red;
     }
 </style>
+
 <?php require '../inc/footer.html'; ?>

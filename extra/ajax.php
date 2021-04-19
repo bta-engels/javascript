@@ -101,4 +101,5 @@
         font-size: 0.6rem;
     }
 </style>
+
 <?php require '../inc/footer.html'; ?>

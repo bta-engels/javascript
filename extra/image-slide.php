@@ -55,4 +55,5 @@ var interval = setInterval(function() {
         align-content: center;
     }
 </style>
+
 <?php require '../inc/footer.html'; ?>
