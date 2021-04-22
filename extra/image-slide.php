@@ -8,7 +8,7 @@
 </div>
 <script>
 var delay = 3000, // 3 sekunden
-    endlos = true,
+    infinite = true,
     imgPath = '../img/',
     counter = 0,
     img = document.querySelector("img"),
@@ -21,7 +21,7 @@ var delay = 3000, // 3 sekunden
         offset: [0, 0.8], // Shorthand for [ 0, 0.8, 1 ]
         easing: ['ease-in', 'ease-out'],
     },
-    bilder = [
+    images = [
         'cowboy.jpg',
         'see.jpg',
         'venus.jpg',
@@ -31,18 +31,18 @@ var delay = 3000, // 3 sekunden
 ];
 
 var interval = setInterval(function() {
-    if( counter === bilder.length ) {
-        if(endlos) {
+    if( counter === images.length ) {
+        if(infinite) {
             // endlos loop
             counter = 0;
         } else {
             // stoppe interval wenn max anzahl erreicht
             console.info("stop bei: " + counter);
             clearInterval(interval);
-            return;
+	        return;
         }
     }
-    img.src = imgPath + bilder[counter];
+    img.src = imgPath + images[counter];
     img.animate(myFadeIn, 1000)
     console.info(counter);
     counter++;
