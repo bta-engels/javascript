@@ -9,13 +9,11 @@
         counter = 0,
 	    interval = setInterval(slider, 1000);
 
-
     function slider() {
 	    if(counter === images.length) {
-		    return clearInterval(interval);
+            return clearInterval(interval);
 	    }
-    	img.src = "../img/" + images[counter];
-    	counter++;
+    	img.src = "../img/" + images[counter++];
     }
 </script>
 <?php require '../inc/footer.html'; ?>

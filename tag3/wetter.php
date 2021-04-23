@@ -1,29 +1,44 @@
 <?php require '../inc/header.html'; ?>
-
 <script src="../js/config.js"></script>
 
 <h1 id="temperatur">Mein Wetter</h1>
 <h3 id="beschreibung"></h3>
 
+<div class="form-group">
+    <input type="text" id="city" class="custom-control-inline" placeholder="Stadt wählen ...">
+    <input type="button" id="submit" value="suche" class="btn btn-primary">
+</div>
+
 <script>
-var
-// Icon URL: "http://openweathermap.org/img/w/" + iconcode + ".png"
-    city = 'Berlin',
-//    city = 'Havana CU',
-		h1 = document.getElementById('temperatur'),
-		h3 = document.getElementById('beschreibung'),
-		url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',de&lang=de&units=metric&APPID=' + OW_API_KEY;
+	var city = document.getElementById("city"),
+		button = document.getElementById("submit"),
+		h1 = document.getElementById("temperatur"),
+		h3 = document.getElementById("beschreibung");
 
-$.get(url, function (resp) {
-	var temperatur  = Math.round(resp.main.temp),
-        description = resp.weather[0].description,
-		iconcode    = resp.weather[0].icon;
+	window.onkeypress = function (e) {
+        if(e.key === "Enter") {
+        	getWetterData();
+        }
+    }
 
-    h1.innerText = temperatur + " °C";
-	h3.innerText = description;
-	h3.style.backgroundImage = "url('http://openweathermap.org/img/w/" + iconcode + ".png')";
-    console.info(resp);
-});
+    button.onclick = function () {
+		getWetterData();
+	}
+
+	function getWetterData() {
+		var cityName = city.value,
+			APIURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&lang=de&units=metric&APPID=" + OW_API_KEY;
+
+		$.get(APIURL, function (response) {
+			var temperatur = Math.round(response.main.temp),
+				beschreibung = response.weather[0].description,
+				iconUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
+
+			h1.innerText = temperatur + " °C";
+			h3.innerText = beschreibung;
+			h3.style.backgroundImage = "url("+iconUrl+")";
+		});
+    }
 </script>
 <style>
     #beschreibung {
@@ -33,5 +48,4 @@ $.get(url, function (resp) {
         background-size: auto;
     }
 </style>
-
 <?php require '../inc/footer.html'; ?>
